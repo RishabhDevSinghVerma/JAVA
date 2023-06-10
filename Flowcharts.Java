@@ -108,6 +108,3 @@ Diamond symbol represents a decision point. Decision based operations such as ye
    ___ 
   /   \     Used to connect different parts of the program and are used in case of
   \___/     break-through. Generally, used for functions. 
-           
-  
-      
