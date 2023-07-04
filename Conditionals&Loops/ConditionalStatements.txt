@@ -16,16 +16,48 @@ test_expression	is	true
 
 Example Code:-
 
-public static void main(String	args[])	{
-int n =	5;
-if(	n <10	)	{
-System.out.print("Inside if	statement");
-}
-System.out.println("Outside	if statement");
-}
+public static void main(String args[])
+	{
+     int n =5;
+     if(n<10)
+     {
+      System.out.print("Inside if statement");
+     }
+      System.out.println("Outside if statement");
+     }
 
 Output:
 Inside	if	statement
 Outside	if	statement
 
 So if the condition given inside if	parenthesis	is true, then statements inside	if block are	executed first and then rest of	the	code.And if	the	condition evaluates	to false,then statements inside if block will be skipped.	
+
+• If– else	statement
+
+if statement evaluates the given test expression.If	it is evaluated	to true,then statements	inside the if block	will be	executed.Otherwise,statements inside else block	will be	executed. After that,rest of the statements	will be	executed normally.
+
+Syntax
+if(test_expression)	{
+     //	Statements to be executed when test_expression is true
+}
+else {
+    //Statements to	be	executed when test_expression is false
+}
+
+Example	Code:
+
+public static void main(String[]args)	
+ {
+     int a=10,b=20;
+     if(a>b)
+       {
+       System.out.println("a is	bigger");
+       }
+    else
+    {
+     System.out.println("b is bigger");
+    }
+}
+
+Output
+b is bigger
