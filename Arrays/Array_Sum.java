@@ -1,5 +1,5 @@
 /*
- * Given an array/list(arr) of size N, you need to find and print the sum of all the elements in * the array/list.
+ * Given an array/list(arr) of size N, you need to find and print the sum of all the elements in the array/list.
  */
 
 import java.util.*;
