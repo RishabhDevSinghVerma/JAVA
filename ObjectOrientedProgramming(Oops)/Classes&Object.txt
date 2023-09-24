@@ -1,0 +1,3 @@
+Classes and Objects:-
+
+Objects are the real word entity. For Example:Watch,Pen,Animals etc.
