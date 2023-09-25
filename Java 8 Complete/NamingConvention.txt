@@ -9,7 +9,7 @@ int number; !=  int Number;       // Different Variables
 ■ Naming Conventions are used to make Java programs more readable.It is important to use meaningful and unambiguous names comrised of Java letters.
 
 
-public class helloWorld      //Here we use camelCase Name Convention for creating a class       helloWorld
+public class helloWorld      //Here we use camelCase Name Convention for creating a class helloWorld
 {
     public static void main(String []Args){
         System.out.println("Welcome to My Repository");
