@@ -1,0 +1,17 @@
+𝐍𝐚𝐦𝐢𝐧𝐠 𝐂𝐨𝐧𝐯𝐞𝐧𝐭𝐢𝐨𝐧 𝐢𝐧 𝐉𝐚𝐯𝐚
+
+■ Java is strictly a case sensitive programming language means in Java Application there is a seperate recognition for lower case letters and Upper Case letters .
+
+Example:If we declare a variable names as Number(Using Capital letter) and number(Using Small letter) then both are different or in memory there are two different varibles.
+
+int number; !=  int Number;       // Different Variables
+
+■ Naming Conventions are used to make Java programs more readable.It is important to use meaningful and unambiguous names comrised of Java letters.
+
+
+public class helloWorld      //Here we use camelCase Name Convention for creating a class       helloWorld
+{
+    public static void main(String []Args){
+        System.out.println("Welcome to My Repository");
+    }
+}
