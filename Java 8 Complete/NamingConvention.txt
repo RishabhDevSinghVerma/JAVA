@@ -9,6 +9,13 @@ int number; !=  int Number;       // Different Variables
 ■ Naming Conventions are used to make Java programs more readable.It is important to use meaningful and unambiguous names comrised of Java letters.
 
 
+■ Class Names:While creating a class,it should be mixed case (camel case) with only the first letter of each word capitalized ,as the following:
+
+         public class studentDetails{....}
+
+
+Example code for Creating a class in Java:
+
 public class helloWorld      //Here we use camelCase Name Convention for creating a class helloWorld
 {
     public static void main(String []Args){
