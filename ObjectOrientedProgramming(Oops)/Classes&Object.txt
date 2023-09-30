@@ -18,3 +18,61 @@ Construtor:Constructor is a special method which is invoked automatically at the
 
 
 
+Introduction to OOPS:
+----------------------
+
+Object-oriented programming System(OOPs) is a programming paradigm based
+on the concept of “objects” and “classes” that contain data and methods. The
+primary purpose of OOP is to increase the flexibility and maintainability of
+programs. It is used to structure a software program into simple, reusable pieces of
+code blueprints (called classes) which are used to create individual instances of
+objects.
+
+
+What is an Object ?
+-------------------
+
+The object is an entity that has a state and a behavior associated with it. It may be
+any real-world object like the mouse, keyboard, chair, table, pen, etc.
+Objects have states and behaviors. Arrays are objects. You've been using objects all
+along and may not even realize it. Apart from primitive data types, objects are all
+around in java.
+
+
+What is a Class ?
+-----------------
+
+A class is a blueprint that defines the variables and the methods (Characteristics)
+common to all objects of a certain kind.
+Example: If Car is a class, then Maruti 800 is an object of the Car class. All cars share
+similar features like 4 wheels, 1 steering wheel, windows, breaks etc. Maruti 800 (The Car
+object) has all these features.
+
+Defining a Class in Java
+------------------------
+
+All class definitions start with the class keyword, which is followed by the name of
+the class.
+
+Here is an example of a Car class:
+
+class Car{
+}
+
+
+Naming Convention of Class
+--------------------------
+
+Java class names are written in CapitalizedWords notation by convention. For
+example,a class for a specific model of Car like the Bugatti Veyron would be
+written as BugattiVeyron. The first letter is capitalized. This is just a good
+programming practice.
+
+
+
+
+
+
+
+
+
