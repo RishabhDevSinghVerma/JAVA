@@ -1,23 +1,3 @@
-Classes and Objects:-
-
-Objects are the real word entity. For Example:Watch,Pen,Animals etc.
-
-
-Encapsulation: Encapsulation is defined as the wrapping up of data & methods under a single unit.It also implements data hiding.
-
-Construtor:Constructor is a special method which is invoked automatically at the time of object creation.
-
-
--Constructor have the same name as class or structure.
-
--Constructor do not have a return type .(Not even void)
-
--Constructors are only called once at object creation.
-
--Memory allocation happens when constructor is called.
-
-
-
 Introduction to OOPS:
 ----------------------
 
@@ -67,6 +47,41 @@ Java class names are written in CapitalizedWords notation by convention. For
 example,a class for a specific model of Car like the Bugatti Veyron would be
 written as BugattiVeyron. The first letter is capitalized. This is just a good
 programming practice.
+
+Access Modifiers
+----------------
+
+1. Private: The access level of a private modifier is only within the class. It
+cannot be accessed from outside the class.
+
+2. Default: The access level of a default modifier is only within the package. It
+cannot be accessed from outside the package. If you do not specify any
+access level, it will be the default.
+
+3. Protected: The access level of a protected modifier is within the package and
+outside the package through child class. If you do not make the child class, it
+cannot be accessed from outside the package.
+
+4. Public: The access level of a public modifier is everywhere. It can be accessed
+from within the class, outside the class, within the package and outside the
+package.
+
+We write the type of modifier before every method or data member.
+
+
+    --------------------------------------------------------------------------------
+    |    Access Modifier     Same Class    Another Class       Another Class       |
+    |                                      In Same Package     In different Package|
+    |------------------------------------------------------------------------------|
+    |    Private             Accessable    Not Accessable       Not Accessable     |
+    |                                                                              |
+    |    Public              Accessable    Accessable           Accessable         |
+    |                                                                              |
+    |    Default             Accessable    Accessable           Not Accessable     |
+    |                                                                              |
+    |   Protected            Accessable    Accessable          Accessable          |
+    |                                                       (Create a Subclas)     |
+    --------------------------------------------------------------------------------
 
 
 
