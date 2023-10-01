@@ -83,11 +83,77 @@ We write the type of modifier before every method or data member.
     |                                                       (Create a Subclas)     |
     --------------------------------------------------------------------------------
 
+The this Parameter
+------------------
+
+● The this parameter is a reference to the current instance of the class and is
+used to access variables that belong to the class.
+
+● We can use this every time but the main use of this comes in picture when
+the attributes and data members share the same name.
+
+Let’s update the Car class with the Car method that creates name and topSpeed
+attributes:
 
 
+class Car{
+ String name;
+ int topSpeed;
+ public Car(String carName, int speed){
+ this.name = carName;
+ this.topSpeed = speed;
+ }
+}
+
+In the body of constructor, two statements are using the self variable:
+1. this.name = name assigns the value of the name parameter to name attribute.
+2. this.topSpeed= topSpeed assigns the value of the topSpeed parameter to
+topSpeed attribute.
+
+All Car objects have a name and a topSpeed, but the values for the name and
+topSpeed attributes will vary depending on the Car instance. Different objects of
+the Car class will have different names and top speeds.
+
+Constructor
+-----------
+
+● Constructors are generally used for instantiating an object.
+● The task of a constructor is to initialize(assign values) to the data members of
+the class when an object of the class is created.
+● In Java, constructor for a class must be of the same name as of class.
+● In Java, constructors don't have a return type.
+
+Syntax of Constructor Declaration
+public Car(){
+ // body of the constructor
+}
+
+Types of constructors
+● Default Constructor: The default constructor is a simple constructor that
+doesn’t accept any arguments.
+● Parameterized Constructor: A constructor with parameters is known as a
+parameterized constructor. The parameterized constructor takes its
+arguments provided by the programmer.
 
 
+Final Keyword
+-------------
 
+If you make any variable final, you cannot change the value of the final variable (It
+will be constant).
 
+class Pen{
+ final int price = 15;
+}
+public class MCQs {
+ public static void main(String[] args) {
+ Pen p = new Pen();
+ p.price = 20;
+ System.out.println(p.price);
+ }
+}
 
+There is a final variable price, we are going to change the value of this variable, but
+it can't be changed because the final variable once assigned a value can never be
+changed. Therefore this will give a compile time error.
 
