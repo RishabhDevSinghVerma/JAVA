@@ -157,3 +157,41 @@ There is a final variable price, we are going to change the value of this variab
 it can't be changed because the final variable once assigned a value can never be
 changed. Therefore this will give a compile time error.
 
+
+Static Keyword
+--------------
+
+The static variable gets memory only once in the class area at the time of class
+loading.
+The static keyword in Java is used for memory management mainly. We can apply
+static keyword with variables, methods, blocks and nested classes. The static
+keyword belongs to the class rather than an instance of the class.
+
+Now in this code, when we look carefully, even when the new instance of Car is
+created, the year is defined by the first instance of the Car and it tends to remain
+
+
+Example Code
+
+class Car{
+ static int year;
+ String company_name;
+}
+class NewCar{
+ public static void main (String[] args) {
+ Car c=new Car();
+ Car.year=2018;
+ c.company_name="KIA";
+ Car d=new Car();
+ System.out.print(d.year);
+ }
+}
+
+
+The same for all instances of the object. But here’s the catch, we can change the
+value of this static variable from any instance. Here the output will be 2018 for
+every instance as long as it is not changed.
+
+
+
+
