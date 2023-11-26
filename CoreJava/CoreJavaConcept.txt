@@ -1,0 +1,14 @@
+Introduction to Java
+
+Java was developed by sun microsystem in 1991,later acquired by oracle corporation.It was developed by james gosling,patrick Naughton and mike sheridan and its team called Green team.
+
+Java is object-oriented, general purpose programming,robust (Capacity of a computer system to handle the errors during execution and manage the incorrect input of data),platform independent programming language used to create application software such as desktop application.
+
+JVM,JRE and JDK
+
+Java Virtual Machine:
+
+Java Runtime Environment:
+
+Java Development kit:  
+
