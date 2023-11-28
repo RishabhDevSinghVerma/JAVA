@@ -1,8 +1,8 @@
-Introduction to Java
+About Java
 
 Java was developed by sun microsystem in 1991,later acquired by oracle corporation.It was developed by james gosling,patrick Naughton and mike sheridan and its team called Green team.
-
 Java is object-oriented, general purpose programming,robust (Capacity of a computer system to handle the errors during execution and manage the incorrect input of data),platform independent programming language used to create application software such as desktop application.
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 JVM,JRE and JDK
 
@@ -12,7 +12,7 @@ Java Runtime Environment:
 
 Java Development kit:
 
-//////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Keywords:Keyword is a reserved word that has a specific meaning within the programming language. Keywords cannot be used as identifiers for variables, classes, methods, or packages. There are 54 keywords in Java which can be categorized as follows:-
 
@@ -26,6 +26,7 @@ Method Definition and Invocation: Keywords like void, return, this, new, etc. ar
 
 Special Keywords: Keywords like abstract, assert, const, default, enum, null, package, super, synchronized, transient, volatile, etc. serve specific purposes in the Java language.
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
