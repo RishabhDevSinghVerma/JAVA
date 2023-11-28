@@ -12,7 +12,19 @@ Java Runtime Environment:
 
 Java Development kit:
 
+//////////////////////////////////////////////////////////////////////////
 
+Keywords:Keyword is a reserved word that has a specific meaning within the programming language. Keywords cannot be used as identifiers for variables, classes, methods, or packages. There are 54 keywords in Java which can be categorized as follows:-
+
+Primitive Data Types: Keywords like int, double, char, boolean, etc. represent the basic data types that can be used to store values in Java programs.
+
+Control Flow Statements: Keywords like if, else, for, while, switch, break, continue, etc. control the flow of execution in a Java program.
+
+Class Definition and Access: Keywords like class, interface, extends, implements, public, private, protected, static, final, etc. are used to define classes, interfaces, and their relationships.
+
+Method Definition and Invocation: Keywords like void, return, this, new, etc. are used to define methods, their return types, and how objects are created and interacted with.
+
+Special Keywords: Keywords like abstract, assert, const, default, enum, null, package, super, synchronized, transient, volatile, etc. serve specific purposes in the Java language.
 
 
 
