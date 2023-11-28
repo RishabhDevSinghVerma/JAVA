@@ -28,5 +28,35 @@ Special Keywords: Keywords like abstract, assert, const, default, enum, null, pa
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+Identifier:An identifier is a name given to a class, interface, method, variable, or package. It allows a programmer to refer to the item from other places in the program. Identifiers are used to give meaningful and descriptive names to programming elements, making the code more readable and understandable.
+
+Rules for Creating Valid Identifiers:
+
+=>First Character: The first character must be a letter, an underscore (_), or a dollar sign (<span class="math-inline">\).
+
+=>Subsequent Characters: Subsequent characters can be letters, digits, underscores (`_`), or dollar signs (`).
+
+=>Case Sensitivity: Java identifiers are case-sensitive. For example, message and Message are considered different identifiers.
+
+=>Keywords: Identifiers cannot be keywords. Keywords are reserved words with specific meanings in the Java language.
+
+=>Length: There is no maximum length for identifiers, but it is recommended to use meaningful and concise names.
+
+Examples of Valid Identifiers:
+
+name
+age
+studentID
+calculateAverage
+_phoneNumber
+
+Examples of Invalid Identifiers:
+
+123 (starts with a digit)
+@username (contains an invalid character)
+if (keyword)
+class (keyword)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
