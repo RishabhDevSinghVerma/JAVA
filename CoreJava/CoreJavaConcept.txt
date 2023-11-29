@@ -103,3 +103,23 @@ Interfaces: Abstract blueprints for defining the behavior of classes.
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+Type casting:Type casting,also known as type conversion, is the process of converting a value of one data type to another data type in Java. It is an essential concept in Java programming, as it allows programmers to explicitly convert data between different types to ensure compatibility and perform operations correctly.
+
+Types of Type Casting:-
+
+Widening Type Casting: This type of conversion involves converting a data type with a smaller range to a data type with a larger range. It is an implicit conversion, meaning it happens automatically without programmer intervention. For example, converting an int to a long is widening type casting.
+
+Example~
+
+int number = 10;
+long convertedNumber = number; // Implicit widening type casting
+
+
+Narrowing Type Casting: This type of conversion involves converting a data type with a larger range to a data type with a smaller range. It is an explicit conversion, meaning the programmer must explicitly cast the value to the smaller type using the casting operator (( )). For example, converting a double to an int is narrowing type casting.
+
+Example~
+
+double decimalValue = 12.56;
+int convertedValue = (int) decimalValue; // Explicit narrowing type casting
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
