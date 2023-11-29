@@ -59,4 +59,47 @@ class (keyword)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+Variable: A variable is a container that holds data values while the program is executed. It is declared with a data type that determines the type of information it can store, such as integers, strings, or boolean values.
+
+Types of Variables in Java:
+
+Local Variables: These variables are declared within a method or block of code and exist only during the execution of that method or block.
+
+Instance Variables: These variables belong to an object and are declared within a class but outside of any method. They exist for the lifetime of the object.
+
+Static Variables: These variables are also known as class variables. They are declared with the static keyword and belong to the class itself, not to individual objects. They exist for the entire program.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Datatypes:Data types in Java are the foundation for storing and manipulating data in Java programs. They categorize different types of information and define the range of values that a variable can hold.Java provides two primary types of data types:
+
+Primitive Data Types:Primitive data types represent fundamental data elements that are directly supported by the Java language. They are not objects and are stored directly in memory. Java has eight primitive data types:
+
+byte: An 8-bit signed integer, ranging from -128 to 127.
+
+short: A 16-bit signed integer, ranging from -32768 to 32767.
+
+int: A 32-bit signed integer, ranging from -2147483648 to 2147483647.
+
+long: A 64-bit signed integer, ranging from -9223372036854775808 to 9223372036854775807.
+
+float: A 32-bit single-precision floating-point number.
+
+double: A 64-bit double-precision floating-point number.
+
+boolean: A true/false value.
+
+char: A 16-bit Unicode character.
+
+Non-Primitive Data Types:Non-primitive data types are derived from primitive data types or other non-primitive data types. They represent more complex data structures and are created using keywords like class, interface, and array. Examples include:
+
+String: A sequence of characters.
+
+Arrays: An ordered collection of elements of the same data type.
+
+Objects: Instances of classes that encapsulate data and behavior.
+
+Interfaces: Abstract blueprints for defining the behavior of classes.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
