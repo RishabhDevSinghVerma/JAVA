@@ -12,3 +12,14 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+Lets talk About Java☕
+
+Java is a high-level, object-oriented, and platform-independent programming language. It was designed by James Gosling and his team at Sun Microsystems and released in 1995.
+James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
+
+How Java Is Platform Independent~
+
+Java achieves platform independence through its use of the Java Virtual Machine (JVM).
+A key component that interprets or compiles Java programs into an intermediate form known as bytecode. 
+This bytecode is not tied to any specific hardware or operating system, enabling Java's "Write Once, Run Anywhere" (WORA) principle.
+When a Java program is compiled, it produces bytecode that can be executed on any device or operating system with a compatible JVM.
