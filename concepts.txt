@@ -23,3 +23,129 @@ Java achieves platform independence through its use of the Java Virtual Machine 
 A key component that interprets or compiles Java programs into an intermediate form known as bytecode. 
 This bytecode is not tied to any specific hardware or operating system, enabling Java's "Write Once, Run Anywhere" (WORA) principle.
 When a Java program is compiled, it produces bytecode that can be executed on any device or operating system with a compatible JVM.
+
+JDK (Java Development Kit)~
+
+It is a kit with a compiler, Java Run-time Environment(JRE), Debuggers, and Java
+documents. JDK should be installed on our computers for execution (creation,
+compilation, and running) of the java program. We use the JRE Java Run-time
+Environment, which provides the conditions to execute the Java program. It provides the
+supporting files, JVM, and core classes.
+
+           ---------------------------------------
+           |     Java Runtime Environment(JRE)    |
+           |                                      |
+           |   ------------    ------------------ |
+           |   |   Class   |   |  Java Virtual  | |
+           |   | Libraries |   |   Machine      | |
+           |   |           |   |    (JVM)       | |     
+           |   -------------   ------------------ |
+           |                                      |
+           |  ----------------------------------- |
+           |  |        Development Tools        | |
+           |  |                                 | |
+           |  ----------------------------------- |
+           ----------------------------------------
+
+                  Java Development Kit (JDK)
+
+Java Runtime Environment(JRE)~
+
+JDK includes JRE, which allows the Java program to run after installation. However, we
+still can not compile it. It has a browser, applet support, and a few plugins. So, JRE is
+required to run a java program on our respective computers.
+
+JRE consists of following
+● Java class libraries ● Java class loader ● Java virtual machine (JVM)
+
+When our software executes a particular program, it requires some environment to run
+it. Usually, it is any operating system, for example, Unix, Linux, Microsoft Windows, or
+macOS. Here JRE acts as a translator and supporter between the operating system and
+the java program.
+
+Java Virtual Machine(JVM)~
+
+It is a significant part of JRE (Java Run-time Environment). When a program is run using
+JDK and JRE, it also goes to the JVM. It contains three phases:
+
+1. Compile the Code: JDK (Java Development Kit) provides a JAVAC compiler to get
+through this step. JDK converts source code into compiled code (a specific
+format) that can be easily interpreted by the JRE(Java Run-time Environment).
+
+2. Run the Code: The bytecode provided by the compiler is run using JVM. JAVAC
+compiler produces compiled code which is converted to machine code using
+platform-specific JVMs. Different platforms have different JVMs. JVMs convert
+the bytecode into platform-specific machine code.
+
+3. Bytecode in the development process: We know JAVAC is present in JDK and
+helps compile source code into bytecode which a JVM can execute. The
+compiler saves it as a .class file. It can be viewed as a bytecode using a
+disassembler like javap.
+
+                               //How Java☕ Code is Executed//
+
+-------------        -------------------         -------------        
+| Java Code  |       |     JAVAC        |       |  Byte Code  |   
+| (.java)    |------>|  (Java Compiler) |------>|  (.class)   |
+|            |       |                  |       |             |
+-------------        --------------------       ---------------
+                                                       |
+                                                       |
+                                                       v
+                                      -----------------------------------
+                                      |               JVM                |   
+                                      |      (Java Virtual Machine)      |
+                                      |                                  |
+                                      ------------------------------------
+                                                       |
+                                                       |
+                                                       |
+                                                       v
+                                               -----------------
+                                               |    Native      |
+                                               | (Machine Code) |      
+                                               ------------------
+
+features of Java~
+
+1. Object-Oriented Programming Language
+- Managing the program in terms of the collection of objects provides a clear
+structure for the programs.
+- Code maintenance and modification become easier.
+- The main concepts of Object-Oriented programming are Abstraction,Encapsulation, Inheritance,and Polymorphism.
+- Being an object-oriented language, Java supports methods (referred to as native
+methods) written in other languages like C and C++.
+
+2. Platform Independent
+- Java is platform-independent because it uses JVM, which compiles source code
+into bytecodes.
+- Bytecodes can run on any operating system, be it Linux, Windows, or macOS,
+which means if we compile a program on Linux OS, then we can run it on
+Windows OS and vice-versa.
+- Every OS has its own JVM (Java Virtual Machine), but the output produced by all
+the OS is the same after the execution of the bytecode.
+- This feature makes Java programs more simple, more secure, and more
+portable.
+- Writing code once and running it anywhere is an alluring feature of being
+platform independent language.
+
+3. Robust
+- Java is reliable because it is developed in such a way that the Java compiler
+detects even those errors that are not easily detected by other programming
+languages.
+- Features like robust garbage collection, memory allocation, and Exception
+Handling makes it more reliable.
+- Java uses a JIT (Just In Time) compiler where the code is executed on demand
+by the compiler.
+- This way, only those methods are completed that are called making applications
+execute faster.
+
+4. Multithreading
+- Java program allows execution of more than one part of a program at one instance for maximum utilization of the CPU.
+
+5. Distributed
+- Java facilitates users to create distributed applications.
+- RMI (Remote Method Invocation) and EJB(Enterprise Java Beans) are used for
+creating distributed applications.
+- This feature of Java makes us able to access files by calling the methods from
+any machine on the internet.
