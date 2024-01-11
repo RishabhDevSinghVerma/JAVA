@@ -151,3 +151,123 @@ creating distributed applications.
 any machine on the internet.
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
+
+Variables~
+
+A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type.Variable is a name of memory location. 
+
+/*
+* 
+* Syntax for Declaring a Variable:
+* 
+* Datatype variable_name  = [value]; 
+* 
+*/
+
+Here type is one of Java primitive datatypes. The variable_name is the name of a variable. We can initialize the variable by specifying an equal sign and a value (Initialization is optional). However,the compiler never assigns a default value to an uninitialized local variable in Java. 
+
+Rules for writing variable names -
+
+👉🏻 All variable names may contain uppercase and lowercase letters (a- z, A-Z), underscore (_) dollar sign ($) and the digits 0 to 9. The dollar sign character is not intended for general use. No spaces and no other special characters are allowed.
+
+👉🏻 The variable names must not begin with a number.
+
+👉🏻 Java is case- sensitive. Uppercase characters are distinct from lowercase characters.
+
+👉🏻 A Java keyword (reserved word) cannot be used as a variable name.
+
+Datatypes~
+
+Based on the data type of a variable, the operating system allocates memory and decides what can be stored in the reserved memory. 
+
+       -----------------------------------------------------
+       | DATA TYPE   |     DEFAULT VALUE    | DEFAULT SIZE |
+       -----------------------------------------------------
+       | char        | '\0'(null character) |   2 Bytes    |
+       | byte        |         0            |   1 Byte     |
+       | short       |         0            |   2 Bytes    |
+       | int         |         0            |   4 Bytes    | 
+       | long        |         0L           |   8 Bytes    |
+       | float       |        0.0f          |   4 Bytes    |
+       | Double      |        0.0d          |   8 Bytes    |
+       | Boolean     |        false         |   1 Bytes    |
+       -----------------------------------------------------
+
+Taking Input~
+
+For taking a Input in Java we use Scanner Class.In Java, Scanner is a class in java.util package used for obtaining the input of the primitive types like int, double, etc. and strings.Using the Scanner class in Java is the easiest way to read input in a Java program.The Java Scanner class breaks the input into tokens using a delimiter that is whitespace by default. It provides many ways to read and parse various primitive values.
+
+In order to use scanner you have to write this import statement at the top
+
+// import java.util.Scanner; //
+
+Some commonly used Scanner class methods are as follows:
+
+        ------------------------------------------------------------------------------- 
+        |      METHOD                                DESCRIPTION                       |
+        | public String next()         It returns the next token fromthe Scanner.      |
+        | public String nextLine()     It moves the Scanner position to the next line  |
+        |                               and returns the value as a string.             |
+        | public byte nextByte()       It scans the next token as a byte.              |
+        | public short nextShort()     It scans the next token as a short value.       |
+        | public int nextInt()         It scans the next token as an int value.        |
+        | public long nextLong()       It scans the next token as a long value.        |
+        | public float nextFloat()     It scans the next token as a float value.       |  
+        | public doublenextDouble()    It scans the next token as a double value       |
+        --------------------------------------------------------------------------------
+
+Taking Character as Input~
+
+Java Scanner class provides nextInt() method for reading an integer value, nextDouble() method for reading a double value, nextLong() method for reading a long value, etc. But there is no nextChar() method in the Scanner class to read a character in Java. 
+To read a character as input, we use next().charAt(0). The next() function returns the next token in the input as a string and charAt(0) function returns the first character in that string.
+
+/*
+* Example code to read a character as input:
+*
+* import java.util.Scanner;
+* public class ScannerDemo1 
+* {
+* public static void main(String[] args)
+*   {
+* Scanner s = new Scanner(System.in);
+* char ch = s.next().charAt(0); // character input
+* System.out.println("input character = " +ch);
+*   }
+* }
+* 
+* Sample Input:
+* k
+* Output:
+* input character = k
+*
+*/
+
+About Main~ 
+
+// public static void main(String[] args)  //
+
+This is the line at which the program will begin executing. This statement is similar to start block in flowcharts. All Java programs begin execution by calling main().The curly braces{} indicate start and end of main. 
+
+print()/println() Methods~
+
+In order to print things to console we have to write - System.out.println("Hello World").
+The built-in method print() is used to display the string which is passed to it.This output string is not followed by a newline, i.e., the next output will start on the same line.
+
+The built-in method println() is similar to print(), except that println() outputs a newline after each call.
+
+/*
+* 
+* Example Code:
+* public static void main(String[] args) 
+*  {
+* System.out.println("Hello World");
+* System.out.println("Programming is fun");
+*  }
+* 
+* Output:
+* Hello World
+* Programming is fun
+* 
+*/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
