@@ -495,3 +495,27 @@ We can put another if–else statament inside an if.
 */
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
+
+👉🏻 return keyword
+
+return is a special keyword,when encountered ends the main.That	means,no statament will	be	executed after return statament.
+
+/*
+* 
+* Example Code:
+* 
+* public static void main(String[]args){
+* 
+* int a=10;
+* if(a>5){
+* System.out.println("Hello");
+* return;
+*        }
+* System.out.println("Hi");
+* }
+* 
+* Output:Hello
+* 
+*/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
