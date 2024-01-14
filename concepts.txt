@@ -519,3 +519,40 @@ return is a special keyword,when encountered ends the main.That	means,no statame
 */
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
+
+Operators~
+
+Operators are special symbols or keywords that are used to perform operations on variables and values.They are crucial for manipulating data and performing various computations in a program.
+Java supports a variety of operators, which can be categorized into several types:
+
+Arithmetic Operators:Arithmetic operators are used to perform mathematical operations on numeric values.
+
++ (addition)
+- (subtraction)
+* (multiplication)
+/ (division)
+% (modulus)
+
+/*
+*   Example Code
+* 
+*   class ExampleCode{
+* 
+*   public static void main(String args[]){
+*   int a = 10;
+*   int b = 20;
+*   int sum = a + b;    // Addition
+*   int difference = a - b;  // Subtraction
+*   int product = a * b;     // Multiplication
+*   int quotient = b / a;    // Division
+*   int remainder = b % a;   // Modulus
+*   
+*   System.out.println("Sum of"+" "+a+" "+"And"+" "+b+" "+"is:"+sum);
+*   System.out.println("Difference of"+" "+a+" "+"And"+" "+b+" "+"is:"+difference);
+*   System.out.println("Modulus of"+" "+b+" "+"And"+" "+a+" "+"is:"+remainder);
+*   System.out.println("Product of"+" "+a+" "+"And"+" "+b+" "+"is:"+product);
+*   System.out.println("Divison of"+" "+b+" "+"And"+" "+a+" "+"is:"+quotient); 
+*  
+*   }
+*   }
+*/
