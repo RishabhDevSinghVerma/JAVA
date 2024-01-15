@@ -556,3 +556,364 @@ Arithmetic Operators:Arithmetic operators are used to perform mathematical opera
 *   }
 *   }
 */
+
+Comparison Operators:Comparison operators are used to compare two values and return a boolean result.
+
+== (equal to)
+!= (not equal to)
+> (greater than)
+< (less than)
+>= (greater than or equal to)
+<= (less than or equal to)
+
+/*
+*   Example Code
+* 
+*   class ExampleCode{
+* 
+*   public static void main(String args[]){
+*       int a = 10;
+*       int b = 20;
+*       
+*       // Comparison operators
+*       boolean isEqual = (a == b);
+*       boolean notEqual = (a != b);
+*       boolean greaterThan = (a > b);
+*       boolean lessThan = (a < b);
+*       boolean greaterThanOrEqual = (a >= b);
+*       boolean lessThanOrEqual = (a <= b);
+*       
+*       // Output results
+*       System.out.println(a + " is equal to " + b + ": " + isEqual);
+*       System.out.println(a + " is not equal to " + b + ": " + notEqual);
+*       System.out.println(a + " is greater than " + b + ": " + greaterThan);
+*       System.out.println(a + " is less than " + b + ": " + lessThan);
+*       System.out.println(a + " is greater than or equal to " + b + ": " + greaterThanOrEqual);
+*       System.out.println(a + " is less than or equal to " + b + ": " + lessThanOrEqual);
+*   }
+*   }
+*/
+
+
+Logical Operators:Logical operators are used to perform logical operations on boolean values.
+
+&& (logical AND)
+|| (logical OR)
+! (logical NOT)
+
+/*
+*   Example Code
+* 
+*   class ExampleCode{
+* 
+*   public static void main(String args[]){
+*       int a = 10;
+*       int b = 20;
+*       int c = 5;
+*       
+*       // Logical operators
+*       boolean andResult = (a < b) && (b > c);
+*       boolean orResult = (a < b) || (b < c);
+*       boolean notResult = !(a < b);
+*       
+*       // Output results
+*       System.out.println("Result of (a < b) && (b > c): " + andResult);
+*       System.out.println("Result of (a < b) || (b < c): " + orResult);
+*       System.out.println("Result of !(a < b): " + notResult);
+*   }
+*   }
+*/
+
+Bitwise Operators:Bitwise operators perform operations on individual bits of binary representations of integers.
+
+& (bitwise AND)
+| (bitwise OR)
+^ (bitwise XOR)
+~ (bitwise NOT)
+<< (left shift)
+>> (right shift)
+>>> (unsigned right shift)
+
+/*
+*   Example Code
+* 
+*   class ExampleCode{
+* 
+*   public static void main(String args[]){
+*       int a = 5;    // binary: 0101
+*       int b = 3;    // binary: 0011
+*       
+*       // Bitwise operators
+*       int bitwiseAnd = a & b;
+*       int bitwiseOr = a | b;
+*       int bitwiseXor = a ^ b;
+*       int bitwiseNotA = ~a;
+*       int leftShift = a << 1;   // left shift by 1 position
+*       int rightShift = a >> 1;  // right shift by 1 position
+*       int unsignedRightShift = a >>> 1;  // unsigned right shift by 1 position
+*       
+*       // Output results
+*       System.out.println("Bitwise AND of " + a + " and " + b + ": " + bitwiseAnd);
+*       System.out.println("Bitwise OR of " + a + " and " + b + ": " + bitwiseOr);
+*       System.out.println("Bitwise XOR of " + a + " and " + b + ": " + bitwiseXor);
+*       System.out.println("Bitwise NOT of " + a + ": " + bitwiseNotA);
+*       System.out.println("Left shift of " + a + " by 1 position: " + leftShift);
+*       System.out.println("Right shift of " + a + " by 1 position: " + rightShift);
+*       System.out.println("Unsigned right shift of " + a + " by 1 position: " +   
+*       unsignedRightShift);
+*   }
+*   }
+*/
+
+Assignment Operators:Assignment operators are used to assign values to variables and perform operations in a concise manner.
+
+= (assignment)
++= (addition assignment)
+-= (subtraction assignment)
+*= (multiplication assignment)
+/= (division assignment)
+%= (modulus assignment)
+&= (bitwise AND assignment)
+|= (bitwise OR assignment)
+^= (bitwise XOR assignment)
+<<= (left shift assignment)
+>>= (right shift assignment)
+>>>= (unsigned right shift assignment)
+
+/*
+*   Example Code with Assignment Operators
+* 
+*   class ExampleCode {
+* 
+*       public static void main(String args[]) {
+*           // Assignment operator
+*           int a = 10;
+*           int b = a;
+*           
+*           // Output result
+*           System.out.println("Value of b after assignment: " + b);
+*           
+*           // Addition assignment
+*           int sum = 5;
+*           sum += 3;  // Equivalent to sum = sum + 3;
+*           
+*           // Output result
+*           System.out.println("Value of sum after addition assignment: " + sum);
+*           
+*           // Subtraction assignment
+*           int difference = 8;
+*           difference -= 4;  // Equivalent to difference = difference - 4;
+*           
+*           // Output result
+*           System.out.println("Value of difference after subtraction assignment: " +
+*           difference);
+*           
+*           // Multiplication assignment
+*           int product = 6;
+*           product *= 2;  // Equivalent to product = product * 2;
+*           
+*           // Output result
+*           System.out.println("Value of product after multiplication assignment: " + product);
+*           
+*           // Division assignment
+*           int quotient = 16;
+*           quotient /= 4;  // Equivalent to quotient = quotient / 4;
+*           
+*           // Output result
+*           System.out.println("Value of quotient after division assignment: " + quotient);
+*           
+*           // Modulus assignment
+*           int remainder = 17;
+*           remainder %= 5;  // Equivalent to remainder = remainder % 5;
+*           
+*           // Output result
+*           System.out.println("Value of remainder after modulus assignment: " + remainder);
+*           
+*           // Bitwise AND assignment
+*           int bitwiseAndResult = 12;
+*           bitwiseAndResult &= 5;  // Equivalent to bitwiseAndResult = bitwiseAndResult & 5;
+*           
+*           // Output result
+*           System.out.println("Value of bitwiseAndResult after bitwise AND assignment: " +
+*           bitwiseAndResult);
+*           
+*           // Bitwise OR assignment
+*           int bitwiseOrResult = 3;
+*           bitwiseOrResult |= 8;  // Equivalent to bitwiseOrResult = bitwiseOrResult | 8;
+*           
+*           // Output result
+*           System.out.println("Value of bitwiseOrResult after bitwise OR assignment: " + 
+*           bitwiseOrResult);
+*           
+*           // Bitwise XOR assignment
+*           int bitwiseXorResult = 9;
+*           bitwiseXorResult ^= 3;  // Equivalent to bitwiseXorResult = bitwiseXorResult ^ 3;
+*           
+*           // Output result
+*           System.out.println("Value of bitwiseXorResult after bitwise XOR assignment: " +
+*           bitwiseXorResult);
+*           
+*           // Left shift assignment
+*           int leftShiftResult = 5;
+*           leftShiftResult <<= 2;  // Equivalent to leftShiftResult = leftShiftResult << 2;
+*           
+*           // Output result
+*           System.out.println("Value of leftShiftResult after left shift assignment: " + 
+*           leftShiftResult);
+*           
+*           // Right shift assignment
+*           int rightShiftResult = 16;
+*           rightShiftResult >>= 2;  // Equivalent to rightShiftResult = rightShiftResult >> 2;
+*           
+*           // Output result
+*           System.out.println("Value of rightShiftResult after right shift assignment: " + 
+*           rightShiftResult);
+*           
+*           // Unsigned right shift assignment
+*           int unsignedRightShiftResult = -8;
+*           unsignedRightShiftResult >>>= 2;  // Equivalent to unsignedRightShiftResult = 
+*           unsignedRightShiftResult >>> 2;
+*           
+*           // Output result
+*           System.out.println("Value of unsignedRightShiftResult after unsigned right shift
+*           assignment: " + unsignedRightShiftResult);
+*       }
+*   }
+*/
+
+Increment and Decrement Operators: Increment and decrement operators are used to increase or decrease the value of a variable by 1.
+
+// ++ (increment by 1)
+// -- (decrement by 1)
+
+/*
+*   Example Code
+* 
+*   class ExampleCode{
+* 
+*   public static void main(String args[]){
+*       int x = 5;
+*       int y = 10;
+*       
+*       // Increment operator
+*       x++;  // Equivalent to x = x + 1;
+*       
+*       // Decrement operator
+*       y--;  // Equivalent to y = y - 1;
+*       
+*       // Output results
+*       System.out.println("Value of x after increment: " + x);
+*       System.out.println("Value of y after decrement: " + y);
+*       
+*       // Post-increment and post-decrement
+*       int a = 15;
+*       int b = a++;  // Post-increment, b gets the current value of a, then a is incremented
+*       int c = 20;
+*       int d = c--;  // Post-decrement, d gets the current value of c, then c is decremented
+*       
+*       // Output results
+*       System.out.println("Value of a: " + a);
+*       System.out.println("Value of b (after post-increment): " + b);
+*       System.out.println("Value of c: " + c);
+*       System.out.println("Value of d (after post-decrement): " + d);
+*   }
+*   }
+*/
+
+
+Conditional Operator (Ternary Operator):The conditional operator is a shorthand way of writing an if-else statement in a single line.
+
+// ? : (conditional expression) //
+
+/*
+*   Example Code with Conditional (Ternary) Operator
+* 
+*   class ExampleCode {
+* 
+*       public static void main(String args[]) {
+*           int a = 10;
+*           int b = 20;
+*           
+*           // Using the conditional operator to find the maximum of two numbers
+*           int max = (a > b) ? a : b;
+*           
+*           // Output result
+*           System.out.println("The maximum of " + a + " and " + b + " is: " + max);
+*           
+*           // Using the conditional operator in a more complex expression
+*           int x = 5;
+*           int result = (x % 2 == 0) ? (x * 2) : (x * 3);
+*           
+*           // Output result
+*           System.out.println("Result of the conditional expression for x=" + x + ": " + 
+*           result);
+*       }
+*   }
+*/
+
+
+Instanceof Operator:The instanceof operator is used to test whether an object is an instance of a particular class or interface.
+
+//instanceof (tests whether an object is an instance of a particular class or interface)//
+
+/*
+*   Example Code with instanceof Operator
+* 
+*   // Define a base class
+*   class Animal {
+*       // Class members and methods
+*   }
+* 
+*   // Define a derived class
+*   class Dog extends Animal {
+*       // Class members and methods specific to Dog
+*   }
+* 
+*   class ExampleCode {
+* 
+*       public static void main(String args[]) {
+*           // Create instances of the classes
+*           Animal animal = new Animal();
+*           Dog dog = new Dog();
+*           
+*           // Test instances using instanceof
+*           boolean isAnimal = (animal instanceof Animal);
+*           boolean isDog = (dog instanceof Dog);
+*           boolean isAnimalAgain = (dog instanceof Animal);  // Dog is also an Animal
+*           
+*           // Output results
+*           System.out.println("Is 'animal' an instance of Animal? " + isAnimal);
+*           System.out.println("Is 'dog' an instance of Dog? " + isDog);
+*           System.out.println("Is 'dog' an instance of Animal? " + isAnimalAgain);
+*       }
+*   }
+*/
+
+Type Cast Operator:he type cast operator is used for explicit type casting, converting a value from one data type to another
+
+//(type) (explicit type casting)
+
+/*
+*   Example Code
+* 
+*   class ExampleCode {
+* 
+*       public static void main(String args[]) {
+*           // Implicit type conversion (widening)
+*           int intValue = 10;
+*           double doubleValue = intValue;  // Automatically converted to double
+*           
+*           // Output result
+*           System.out.println("Implicit type conversion (widening): " + doubleValue);
+*           
+*           // Explicit type conversion (narrowing)
+*           double anotherDoubleValue = 15.75;
+*           int anotherIntValue = (int) anotherDoubleValue;  // Explicitly cast to int
+*           
+*           // Output result
+*           System.out.println("Explicit type conversion (narrowing): " + anotherIntValue);
+*       }
+*   }
+*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////
