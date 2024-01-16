@@ -917,3 +917,243 @@ Type Cast Operator:he type cast operator is used for explicit type casting, conv
 */
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
+
+Loops~
+
+Loop statements allows us to execute a block of statements several number of times depending on certain condition.Java provides three ways for executing the loops. While all the ways provide similar basic functionality, they differ in their syntax and condition checking time.
+A Loop tells the computer to repeat a particular set of instructions continually until a specific condition meets. 
+
+Entry Control Loop
+
+                        |       false
+          ------------> |---------------->
+         ^              /\               |
+         |             /  \              |
+         |            /    \             |
+         |           /      \            |
+         |          /        \           |
+         |         /          \          |
+         |        /  Condition \         |
+         |        \            /         |
+         |         \          /          |
+         |          \        /           |
+         |           \      /            |
+         |            \    /             |
+         |             \  /              |
+         |              \/               |
+         |              |  True          |
+         |              |                |
+         |              |                |
+         |              v                |
+         |        -------------          |
+         |        |  Body of   |         |
+         |        |   Loop     |         |
+         |        --------------         |
+         |              |                |
+         |              |                |
+         |_____________ v                |
+                        |                |
+                        |                |
+                  -------------          |
+                  | Statement  |<---------
+                  --------------
+
+An entry-controlled loop is a type of Loop in computer programming that tests the loop condition at the Loop's beginning before executing the Loop's body.As the program flow reaches an entry-controlled loop, the loop condition is tested before the first iteration of the Loop. 
+If the condition meets, then the loop body will be executed. If it does not, the loop body will be skipped entirely, and the program will continue execution from the first statement following the Loop.
+After running the loop for required iterations (when the condition is not met), the program exits the loop.Some popular entry-controlled loops are for Loop, while Loop, etc.
+
+Exit Control Loop
+
+An exit-controlled loop is a type of Loop in computer programming that tests the loop condition at the end of the Loop after executing the body of the Loop at least once.
+
+                        |
+                  -----------------
+         ------->|  Body of Loop   |       
+         |        -----------------
+         |               |
+         |              /\ 
+         |             /  \ 
+         |            /    \ 
+         |           /      \
+         |          /        \ 
+         |         /          \   False
+         |        /  Condition \ --------
+         |        \            /         |
+         |         \          /          |
+         |          \        /           |
+         |           \      /            |
+         |            \    /             |
+         |             \  /              |
+         |              \/               |
+         |              |  True          |
+         |              |                |
+         |              |                |
+         |<-------------v                |
+                                         |
+                                         |
+                   -----------           |
+                  | Statements |<---------      
+                   ------------
+
+As the program flow reaches an exit-controlled loop, the loop body is executed first, and then the loop condition is tested.If the condition is met, the Loop will continue to run, and the body's code will perform again. If it does not, the Loop will exit, and the program will continue execution from the first statement following the Loop.
+After running the loop for required iterations (when the condition is not met), the program exits the loop.Do-while loop is primarily used in the exit-controlled Loop
+
+Several loops are available in programming languages, but the most common ones are:
+
+● for loop
+for loop is kind of loop in which we give initialization statement, test expression and update statement can be written in one line.
+
+Inside for, three statements are written –
+
+a. Initialization – used to initialize your loop control variables. This statement is executed first and only once.
+
+b. Test condition – this condition is checked everytime we enter the loop.Statements inside the loop are executed till this condition evaluates to true. As soon as condition evaluates to false, loop terminates and then first statement after for loop will be executed next.
+
+c. Updation – this statement updates the loop control variable after every execution of statements inside loop. After updation, again test conditon is checked. If that comes true, the loop executes and process repeats. And if condition is false, the loop terminates.
+
+/*
+* 
+* for (initializationStatement; test_expression; updateStatement) {
+* // Statements to be executed till test_expression is true
+* }
+* 
+*/
+
+/*
+* 
+* Example Code:
+* 
+* public static void main(String[] args){
+* for(int i = 0; i < 3; i++)
+*    {
+* System.out.print("Inside for loop : ");
+* System.out.println(i);
+*    }
+* System.out.println("Done");
+* }
+* 
+* Output:
+* Inside for Loop : 0
+* Inside for Loop : 1
+* Inside for Loop : 2
+* Done
+*/
+
+In for loop its not compulsory to write all three statements i.e.initializationStatement, test_expression and updateStatement. We can skip one or more of them (even all three)
+We can also skip the test_expression. See the example below :
+
+Variations of for loop~
+
+The three expressions inside for loop are optional. That means, they can be omitted as per requirement.
+
+/*
+* Example code 1: Initialization part removed –
+* public static void main(String[] args) {
+* int i = 0;
+* for( ; i < 3; i++) {
+* System.out.println(i);
+* }
+* }
+* 
+* Output:
+* 0
+* 1
+* 2
+* 
+*/
+
+/*
+* 
+* Example code 2: Updation part removed
+* 
+* public static void main(String[] args) {
+* for(int i = 0; i < 3; ) {
+* System.out.println(i);
+* i++;
+* }
+* }
+*
+* Output:
+* 0
+* 1
+* 2
+* 
+*/
+
+/*
+* 
+* Example code 3: Condition expression removed ,thus making our loop infinite –
+* 
+* public static void main(String[] args) {
+* for(int i = 0; ; i++) {
+* System.out.println(i);
+* }
+* }
+* 
+*/
+
+/*
+* Example code 4:
+* We can remove all the three expression,thus forming an infinite loop 
+* 
+* public static void main(String[] args) {
+* for( ; ; ) {
+* System.out.print("Inside for loop");
+* }
+* }
+*/
+
+Multiple statements inside for loop~
+
+We can initialize multiple variables, have multiple conditions and multiple update statements inside a for loop. We can separate multiple statements using comma, but not for conditions. They need to be combined using logical operators.
+
+/*
+* 
+* Example code:
+* 
+* public static void main(String[] args){
+* for(int i = 0, j = 4; i < 5 && j >= 0; i++, j--) {
+* System.out.println(i + " " + j);
+* }
+* }
+* 
+* Output:
+* 
+* 0 4
+* 1 3
+* 2 2
+* 3 1
+* 4 0
+* 
+*/
+
+While loop~
+
+While is one kind of loop that we can use.When executing, if the test_expression result is true,then the actions inside the loop will be executed.This will continue as long as the expression result is true.
+
+/*
+* 
+* Syntax
+* while(test_expression){
+* //Statements to be executed till test_expression is true
+* }
+* 
+*/
+
+
+Example	Code:
+public static void main(String[]args){
+int i=1;
+while(i<=5){
+System.out.println(i);
+i++;
+}
+}
+Output	:	
+1
+2
+3
+4
+5
+
+In while loop,first given test	expression will	be checked.If that evaluates to	be true,	then the statements inside while will be executed.After	that,the condition will	be checked	again and the process continues	till the given condition becomes false.
