@@ -1156,4 +1156,6 @@ Output	:
 4
 5
 
-In while loop,first given test	expression will	be checked.If that evaluates to	be true,	then the statements inside while will be executed.After	that,the condition will	be checked	again and the process continues	till the given condition becomes false.
+In while loop,first given test	expression will	be checked.If that evaluates to	be true,then the statements inside while will be executed.After	that,the condition will	be checked	again and the process continues	till the given condition becomes false.
+
+Do While Loop~
