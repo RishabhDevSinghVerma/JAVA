@@ -1204,3 +1204,4 @@ The program prompts the user to enter a positive number.The do-while loop ensure
 Function~
 
 A Function is a collection of statements designed to perform a specific task.Function is like a black box that can take certain input(s) as its parameters and can output a value which is the return value. A function is created so that one can use it as many time as needed just by using the name of the function, you do not need to type the statements in the function every time required.
+
